@@ -1,0 +1,25 @@
+{
+  "key": "Jira-Plugin-Example",
+  "baseUrl": "https://80321291.ngrok.io",
+  "name": "MyAddon",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": ["read"],
+  "modules": {
+    "webhooks": [
+      {
+        "event": "jira:issue_updated",
+        "url": "/webhook/issue"
+      },
+      {
+        "event": "jira:issue_created",
+        "url": "/webhook/issue"
+      }
+    ]
+  }
+}

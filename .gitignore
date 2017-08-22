@@ -1,0 +1,10 @@
+# Idea
+/.idea
+*.iml
+
+# Built Files
+/target 
+
+# Temporary files
+*~
+.*.sw[a-p]

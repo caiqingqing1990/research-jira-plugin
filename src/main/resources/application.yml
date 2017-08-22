@@ -1,0 +1,11 @@
+spring.main.banner_mode: "off"
+
+spring.jpa:
+  generate-ddl: true
+  hibernate.ddl-auto: create-drop
+  hibernate.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  database: HSQL
+  show-sql: false
+
+add-on:
+  name: Atlassian Connect Spring Boot Example
